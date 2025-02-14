@@ -1,3 +1,6 @@
+import 'package:attend_app/ui/absence/absence_screend.dart';
+import 'package:attend_app/ui/attend/attend_screen.dart';
+import 'package:attend_app/ui/history/history.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -79,7 +82,7 @@ class HomeScreen extends StatelessWidget {
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomeScreen()),
+                                  builder: (context) => AttendScreen()),
                             );
                           },
                         ),
@@ -92,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomeScreen()),
+                                  builder: (context) => AbsentScreen()),
                             );
                           },
                         ),
@@ -105,7 +108,7 @@ class HomeScreen extends StatelessWidget {
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomeScreen()),
+                                  builder: (context) => AttendanceHistoryScreen()),
                             );
                           },
                         ),
